@@ -1,10 +1,5 @@
 # Laravel Gettext
 
-[![Stable build Status](https://travis-ci.org/xinax/laravel-gettext.png?branch=1.0.3)](https://travis-ci.org/xinax/laravel-gettext) <a href="https://github.com/xinax/laravel-gettext/tree/1.0.3">Latest Laravel 4 stable release (1.0.3)</a>
-
-[![Stable build Status](https://travis-ci.org/xinax/laravel-gettext.png?branch=2.0.3)](https://travis-ci.org/xinax/laravel-gettext) <a href="https://github.com/xinax/laravel-gettext/tree/2.0.3">Latest Laravel 5 stable release (2.0.3)</a>
-
-[![Dev build Status](https://travis-ci.org/xinax/laravel-gettext.png?branch=master)](https://travis-ci.org/xinax/laravel-gettext) <a href="https://github.com/xinax/laravel-gettext/tree/master">Development master</a> Unstable, only for development (dev-master)
 
 *Laravel Gettext* is a package compatible with the great Laravel PHP Framework. It provides a simple way to add localization support to Laravel applications. It is designed to work with *GNU Gettext* and *PoEdit*.
 
@@ -23,14 +18,14 @@ Note that branch <b>1.x is for Laravel 4</b>, branch <b>2.x is for Laravel 5</b>
 Add the composer repository to your *composer.json* file:
 
 ```json
-    "xinax/laravel-gettext": "2.x" //Laravel 5
+    "compareasiagroup/laravel-gettext": "2.x" //Laravel 5
 ```
 
 And run composer update. Once it's installed, you can register the service provider in config/app.php in the providers array:
 
 ```php
   'providers' => array(
-      'Xinax\LaravelGettext\LaravelGettextServiceProvider',
+      'CompareAsiaGroup\LaravelGettext\LaravelGettextServiceProvider',
   )
 ```
 
@@ -47,7 +42,7 @@ In Laravel 5 you also need to register the LaravelGettext middleware in the app/
 ```php
     protected $middleware = [
         ...
-        'Xinax\LaravelGettext\Middleware\GettextMiddleware',
+        'CompareAsiaGroup\LaravelGettext\Middleware\GettextMiddleware',
     ]
 ```
 
